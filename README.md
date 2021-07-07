@@ -2,6 +2,8 @@
 
 The client-side of the Nevermore DevTools, including all JS & CSS to run the DevTools webapp.
 
+Forked from [Chrome Devtools](https://chromium.googlesource.com/devtools/devtools-frontend).
+
 ### Source code
 
 The frontend is available on [chromium.googlesource.com](https://chromium.googlesource.com/devtools/devtools-frontend).
