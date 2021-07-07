@@ -9,7 +9,7 @@ vars = {
   'checkout_reclient': False,
 
   'build_url': 'https://chromium.googlesource.com/chromium/src/build.git',
-  'build_revision': 'b11e004f56269c7d65564257d3bc3a7c3ca2b13c',
+  'build_revision': 'bc3e3274d2b53584f1c28296be5ff96cc1a93a61',
 
   'buildtools_url': 'https://chromium.googlesource.com/chromium/src/buildtools.git',
   'buildtools_revision': 'fd3f3c19981cd8fe4e4f11e0a7b8fb6cf329807e',
@@ -33,11 +33,11 @@ vars = {
 
   # Chromium build number for unit tests. It should be regularly updated to
   # the content of https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/LAST_CHANGE
-  'chromium_linux': '898741',
+  'chromium_linux': '899010',
   # the content of https://commondatastorage.googleapis.com/chromium-browser-snapshots/Win_x64/LAST_CHANGE
-  'chromium_win': '898749',
+  'chromium_win': '899007',
   # the content of https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/LAST_CHANGE
-  'chromium_mac': '898748',
+  'chromium_mac': '899008',
 }
 
 # Only these hosts are allowed for dependencies in this DEPS file.

@@ -220,9 +220,11 @@ const emitInlineEnums = (prefix: string, propertyTypes?: Protocol.PropertyType[]
 
 // Please keep `knownIdentifierTypes` sorted.
 const knownIdentifierTypes = [
+  'Accessibility.AXNodeId',
   'CacheStorage.CacheId',
   'DOM.BackendNodeId',
   'DOM.NodeId',
+  'Fetch.RequestId',
 ];
 
 const emitDomainType = (domain: Protocol.Domain, type: Protocol.DomainType) => {
@@ -403,14 +405,25 @@ const emitApi = (moduleName: string, protocolModuleName: string, domains: Protoc
   emitOpenBlock(`declare namespace ${moduleName}`);
 
   emitLine();
+  emitLine('export type ProtocolDomainName = keyof ProtocolApi;');
+
+  emitLine();
   emitOpenBlock('export interface ProtocolApi');
   domains.forEach(d => {
     emitLine(`${d.domain}: ${d.domain}Api;`);
     emitLine();
   });
   emitCloseBlock();
-  emitLine();
 
+  emitLine();
+  emitOpenBlock('export interface ProtocolDispatchers');
+  domains.forEach(d => {
+    emitLine(`${d.domain}: ${d.domain}Dispatcher;`);
+    emitLine();
+  });
+  emitCloseBlock();
+
+  emitLine();
   const protocolModulePrefix = toTitleCase(protocolModuleName);
   domains.forEach(d => emitDomainApi(d, protocolModulePrefix));
   emitCloseBlock();

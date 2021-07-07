@@ -23,7 +23,7 @@ declare namespace Protocol {
     /**
      * Unique accessibility node identifier.
      */
-    export type AXNodeId = string;
+    export type AXNodeId = OpaqueIdentifier<string, 'Protocol.Accessibility.AXNodeId'>;
 
     /**
      * Enum of possible property types.
@@ -13027,7 +13027,7 @@ declare namespace Protocol {
     /**
      * Unique request identifier.
      */
-    export type RequestId = string;
+    export type RequestId = OpaqueIdentifier<string, 'Protocol.Fetch.RequestId'>;
 
     /**
      * Stages of the request to handle. Request will intercept before the request is
