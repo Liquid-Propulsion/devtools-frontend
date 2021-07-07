@@ -16,18 +16,11 @@ group("front_end") {
     ":legacy_css",
     ":legacy_entrypoints",
     "Images",
-    "entrypoints/devtools_app",
     "entrypoints/formatter_worker:worker_entrypoint",
     "entrypoints/heap_snapshot_worker:worker_entrypoint",
-    "entrypoints/inspector",
-    "entrypoints/js_app",
-    "entrypoints/lighthouse_worker:bundle",
-    "entrypoints/ndb_app",
-    "entrypoints/node_app",
+    "entrypoints/nevermore_app",
     "entrypoints/shell",
-    "entrypoints/toolbox",
     "entrypoints/wasmparser_worker:worker_entrypoint",
-    "entrypoints/worker_app",
     "legacy_test_runner",
   ]
 }
@@ -131,13 +124,7 @@ node_action("html_entrypoints") {
   ]
 
   outputs = [
-    "$target_gen_dir/devtools_app.html",
-    "$target_gen_dir/inspector.html",
-    "$target_gen_dir/js_app.html",
-    "$target_gen_dir/ndb_app.html",
-    "$target_gen_dir/node_app.html",
-    "$target_gen_dir/toolbox.html",
-    "$target_gen_dir/worker_app.html",
+    "$target_gen_dir/nevermore_app.html",
   ]
 
   metadata = {

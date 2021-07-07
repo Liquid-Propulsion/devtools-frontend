@@ -7,13 +7,7 @@ const path = require('path');
 const {argv} = require('yargs');
 
 const ENTRYPOINTS = [
-  'devtools_app',
-  'inspector',
-  'js_app',
-  'ndb_app',
-  'node_app',
-  'toolbox',
-  'worker_app',
+  'nevermore_app',
 ];
 
 const {template} = argv;
