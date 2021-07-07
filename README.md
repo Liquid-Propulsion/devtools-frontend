@@ -1,12 +1,6 @@
-# Chrome DevTools frontend
+# Nevermore DevTools frontend
 
-<!-- [START badges] -->
-
-[![npm package](https://img.shields.io/npm/v/chrome-devtools-frontend.svg)](https://npmjs.org/package/chrome-devtools-frontend)
-
-<!-- [END badges] -->
-
-The client-side of the Chrome DevTools, including all JS & CSS to run the DevTools webapp.
+The client-side of the Nevermore DevTools, including all JS & CSS to run the DevTools webapp.
 
 ### Source code
 
