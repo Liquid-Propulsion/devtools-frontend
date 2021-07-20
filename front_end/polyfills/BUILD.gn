@@ -1,0 +1,6 @@
+import("../../scripts/build/ninja/copy.gni")
+import("../../scripts/build/ninja/vars.gni")
+
+copy_to_gen("polyfills") {
+  sources = [ "construct-stylesheets.js", "custom-elements.js", "scrollintoviewineeded.js" ]
+}

@@ -16,6 +16,7 @@ group("front_end") {
     ":legacy_css",
     ":legacy_entrypoints",
     "Images",
+    "polyfills",
     "entrypoints/formatter_worker:worker_entrypoint",
     "entrypoints/heap_snapshot_worker:worker_entrypoint",
     "entrypoints/nevermore_app",
