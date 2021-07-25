@@ -25,4 +25,3 @@ if (!Element.prototype.scrollIntoViewIfNeeded) {
       }
     };
   }
-  {"mode":"full","isActive":false}
