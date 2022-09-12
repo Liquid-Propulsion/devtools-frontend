@@ -18,7 +18,7 @@ const UIStrings = {
   /**
   *@description Text that refers to the main target.
   */
-  nevermore: 'Nevermore',
+  nevermore: 'Mission Control',
 };
 
 const str_ = i18n.i18n.registerUIStrings('entrypoints/nevermore_app/NevermoreMain.ts', UIStrings);
